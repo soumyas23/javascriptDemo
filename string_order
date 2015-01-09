@@ -1,0 +1,14 @@
+
+
+
+/*function order(word)
+{
+	var strlen=0;
+	strlen=word.length;
+	console.log(strlen);
+	
+
+}*/
+var word="soumya";
+//order(word);
+console.log(word.length);

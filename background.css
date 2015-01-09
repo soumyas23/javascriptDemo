@@ -1,0 +1,38 @@
+body {
+    background-color: #d0e4fe;
+    background-image: url("6.jpg");
+   background-repeat: no-repeat;
+  background-position: left bottom;
+   margin-right:50px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: red;
+}
+#para
+{
+	font-size: 20px;
+    color: blue;
+}
+p.check
+{
+	font-size: 21px;
+    color: black;
+}
+
+
+.cdiv
+{
+	border:1px solid;
+	width: 50%;
+	text-align: auto;
+}

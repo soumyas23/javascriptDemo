@@ -1,0 +1,37 @@
+
+function  make()
+
+{
+	return{
+		sum: function(ar)
+		{
+			var  sum=0;
+			
+				for(var i=0;i<ar.length;i++)
+				{
+
+					sum+=ar[i];
+
+				}
+				return(sum);
+
+		},
+		insert:function(arr,value)
+		{
+
+
+			arr.push(value);
+
+		}
+
+
+	}
+}
+var  arr=[10,12,13];
+var b =make().sum(ar);
+console.log(b);
+make().insert(arr,7);
+for(var i=0;i<arr.length;i++)
+{
+console.log(arr[i]);
+}
