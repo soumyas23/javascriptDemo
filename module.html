@@ -6,18 +6,16 @@
     <script>
       var nameApp = angular.module('nameApp', []);
       nameApp.controller('NameCtrl', function ($scope){
-        $scope.user={};
-        $scope.user.firstName = 'soumya';
-        $scope.user.lastName ='S';
-      
+        $scope.firstName = 'soumya';
+        $scope.lastName = 'S';
       });
     </script>
   </head>
   <body ng-controller="NameCtrl">
-    First name:<input ng-model="user.firstName" type="text"/>
+    First name:<input ng-model="firstName" type="text"/>
     <br>
-    Last name:<input ng-model="user.lastName" type="text"/>
+    Last name:<input ng-model="lastName" type="text"/>
     <br>
-    Hello {{user}}
+    Hello {{firstName}} {{lastName}}
   </body>
 </html>

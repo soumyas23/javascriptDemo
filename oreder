@@ -1,3 +1,0 @@
-var word="soumya";
-var len=word.length;
-console.log(len);

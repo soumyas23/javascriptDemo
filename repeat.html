@@ -1,0 +1,19 @@
+<html ng-app="nameApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script>
+    var nameApp=angular.module('nameApp',[]);
+    nameApp.controller('nameContrl',function($scope)
+    	{
+    		$scope.names=[' soumya',' Albi','jesna'];
+    	});
+
+    </script>
+    </head>
+    <body ng-controller="nameContrl">
+    <ol>
+    	<li ng-repeat="n in names" >{{names}} </li>
+    </ol>
+    </body>
