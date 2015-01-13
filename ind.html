@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Starter</title>
+  </head>
+  <body>
+    Name:<input  id="textinput" type="text"/>
+    Hello world!<span id="spid"> hai </span>
+    <script>   
+    var textinputElemnt=document.getElementById('textinput');
+    textinputElemnt.addEventListener('keyup',function()
+    {
+    	
+    	var value=textinputElemnt.value;
+    	console.log("The typed  value is::"+value);
+    });
+    </script>
+  </body>
+</html>

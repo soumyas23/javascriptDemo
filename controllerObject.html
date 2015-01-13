@@ -1,0 +1,23 @@
+<html ng-app="nameApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script>
+      var nameApp = angular.module('nameApp', []);
+      nameApp.controller('NameCtrl', function ($scope){
+        $scope.user={};
+        $scope.user.firstName = 'soumya';
+        $scope.user.lastName ='S';
+      
+      });
+    </script>
+  </head>
+  <body ng-controller="NameCtrl">
+    First name:<input ng-model="user.firstName" type="text"/>
+    <br>
+    Last name:<input ng-model="user.lastName" type="text"/>
+    <br>
+    Hello {{user}}
+  </body>
+</html>
