@@ -1,0 +1,79 @@
+<div class="col-md-12" ng-controller="ViewitemsCtrl">
+<div class="topdiv">
+	Pizza World...
+</div>
+<div class="middlediv">
+
+	<img src="header_img.jpg" width="95%" height="300px"/>
+</div>
+<div class="thirddiv">
+	
+	<table>
+	<tr>
+	<td>
+	<ul>
+	<li>
+	<a href="#/signup"><span style="color:white">SignUp</span></a>
+	</li>
+	</ul>
+	</td>
+	
+
+	<td>
+	<ul >
+	<li>
+	<a href="#/login"><span style="color:white">Login</span></a>
+	</li>
+	</ul>
+	</td>
+	<td>
+	<ul>
+	<li>
+	<a href="#/viewitems"><span style="color:white">ViewItems</span></a>
+	</li>
+	</ul>
+	</td>
+</tr>
+</table>
+</div>
+<div class="bodydiv">
+	<div class="cart">
+	<input type="image" src="sh1.png" ng-model="cartimage" ng-click="getcartvalue()"
+		width="200px" height="200"/>
+
+</div>
+<div class="cart1">
+<label ng-show="cartvalue">[{{cartvalue}}]</label>
+</div>
+
+	
+
+<div  class="subHeading"> Pizza  Details</td></div>
+<div ng-repeat="pissa in pissas" class="imagedis" >
+
+<img src="{{pissa.image}}">
+<div class="namedis">
+Name: {{pissa.name}}
+</div>
+<div class="pricedis">
+Price: {{pissa.price}}
+</div>
+<div class="namedis">
+Description: {{pissa.description}}
+</div>
+<div class="namedis">
+Type: {{pissa.type}}
+</div>
+<div class="namedis">
+Category: {{pissa.category}}
+</div>
+<div class="buttondis1">
+<input type="button" id="order" name="order" value="Order" ng-click="order(pissa)"/>
+</div>
+<div class="buttondis2">
+<input type="button" id="cart" name="cart" value="Add To cart" ng-model="show.cart"  ng-click="addtocart(pissa)"/>
+</div>
+</div>
+
+</div>
+</div>

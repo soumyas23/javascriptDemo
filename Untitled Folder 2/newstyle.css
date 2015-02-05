@@ -1,0 +1,51 @@
+.heading
+{
+	
+
+	background-position: right top;
+	
+	font-family: "Times New Roman";
+	text-align: center;
+	color:Maroon;
+	font-size: 22px;
+	/*font-style: italic; */
+
+
+
+}
+body
+{
+
+ background-image: url("m.jpg");
+ background-size:2000px;
+
+
+ background-repeat: no-repeat;
+}
+.middle1
+{
+	
+	border-color: blue; 
+	line-height: 100%;
+	vertical-align:text-bottom;
+	word-spacing: 5px;
+
+}
+a:link{
+	color: red;
+}
+a:hover{
+	color:blue;
+
+}
+a:active{
+	color:black;
+
+}
+li.a{
+	list-style-type: circle;
+}
+.login{
+	color: black;
+	font-size: 18px;
+}

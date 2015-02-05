@@ -1,0 +1,61 @@
+<div class="col-md-12" ng-controller="CartdetailsCtrl">
+<div class="topdiv">
+	Pizza World...
+</div>
+<div class="middlediv">
+
+	<img src="header_img.jpg" width="95%" height="300px"/>
+</div>
+<div class="thirddiv">
+	
+	<table>
+	<tr>
+	<td>
+	<ul>
+	<li>
+	<a href="#/viewItems"><span style="color:white">ViewItems</span></a>
+	</li>
+	</ul>
+	</td>
+	
+
+	
+</tr>
+</table>
+</div>
+<div class="bodydiv">
+
+<div ng-repeat="pissa in cartvalue" class="imagedis" >
+
+	<img src="{{pissa.image}}">
+	<div class="namedis">
+	Name: {{pissa.name}}
+</div>
+<div class="pricedis">
+	Price: {{pissa.price}}
+</div>
+<div class="namedis">
+	Description: {{pissa.description}}
+</div>
+<div class="namedis">
+	Type: {{pissa.type}}
+</div>
+<div class="namedis">
+	Category: {{pissa.category}}
+</div>
+<div class="namedis1">
+		Quantity  : 
+				<input type="number" name="quantity" ng-model="pissa.quantity"/>
+	</div>
+	<div class="namedis2">
+		<label ng-show="pissa.quantity">Total Amount:{{pissa.quantity*pissa.price}} </label></div>
+</div>
+
+
+<div class="buttondis3">
+	<input type="button"
+	 id="order" name="order"
+	  value="Checkout" ng-click="order()"/>
+</div>
+</div>
+</div>

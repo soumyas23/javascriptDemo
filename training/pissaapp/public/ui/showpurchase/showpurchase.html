@@ -1,0 +1,85 @@
+<div class="col-md-12" ng-controller="ShowpurchaseCtrl">
+
+<div class="heading" > 
+  Pizzzzzzaaaaaaaaaaa  World..
+
+</div>
+
+
+
+<div class="div">
+	<a href="#/signup">SignUp</a>
+</div>
+<div class="div">
+	<a href="#/login">Login</a>
+</div>
+
+<div class="div">
+	<a href="#/additems">AddItems</a>
+</div>
+<div class="div">
+	<a href="#/viewitems">ViewItems</a>
+</div>
+<div  class="subHeading"> Purchase Details</div>
+
+<div  class="imagedis" >
+
+	<img src="{{purchase.image}}">
+  <div class="namedis">
+	Name: {{purchase.name}}
+	</div>
+	<div class="pricedis">
+		Price: {{purchase.price}}
+	</div>
+	<div class="namedis">
+		Description: {{purchase.description}}
+	</div>
+	<div class="namedis">
+		Type: {{purchase.type}}
+	</div>
+	<div class="namedis">
+		Category: {{purchase.category}}
+	</div>
+</div>
+<div  class="subHeading"> Shipping Details</div>
+
+
+<div  class="imagedis" >
+
+
+	 <div class="namedis1">
+			Name: {{purchaseAddress.name}}
+	</div>
+	<div class="namedis1">
+			Email: {{purchaseAddress.email}}
+	</div>
+	<div class="namedis1">
+			Phone: {{purchaseAddress.phone}}
+	</div>
+	<div class="namedis1">
+			Address: {{purchaseAddress.address1}}
+	</div>
+
+	<div class="namedis1">
+			Street: {{purchaseAddress.address2}}
+	</div>
+	<div class="namedis1">
+			City: {{purchaseAddress.city}}
+	</div>
+	<div class="namedis1">
+			State: {{purchaseAddress.state}}
+	</div>
+	<div class="namedis1">
+			Pincode: {{purchaseAddress.pincode}}
+	</div>
+	<div class="namedis1">
+		Quantity  : 
+				<input type="number" name="quantity" ng-model="purchase.quantity"/>
+	</div>
+	<div class="namedis2">
+		<label ng-show="purchase.quantity">Total Amount:{{purchase.quantity*purchase.price}} </label></div>
+	<div class="namedis1">
+	<input type="button"  name="order" value="Place Order" ng-click="display()" />
+	</div>
+	
+</div>

@@ -1,0 +1,229 @@
+/*body
+{
+
+	background-image: url("image/30.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+
+*/}
+.signup
+{
+
+	width: 200px;
+	height: 200px;
+	margin-top: 30px;
+}
+.heading
+{
+	font-family:"Monotype Corsiva", Times, serif;
+	font-size: 29px;
+	text-align: center;
+	font-style: italic;
+	margin-top: 50px;
+
+	color: #85335C;
+	
+}
+.subHeading{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	
+	color: #8A2E2E;
+}
+.content{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 18px;
+	margin-left:100px;
+	
+	
+	
+}
+.brder{
+	width:500px;
+	height: auto;
+	
+}
+.div
+{
+	border:outset;
+	width:200px;
+	height: auto;
+	text-align: center;
+}
+.imagedis{
+	
+	width:auto;
+	height: auto;
+	margin-left:200px;
+}
+
+.namedis{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #686868 ;
+	margin-left:50px;
+}
+.pricedis{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:red;
+	margin-left:50px;
+}
+
+.buttondis1{
+	margin-left:50px;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:red;
+	
+}
+.buttondis2{
+	margin-top: -28px;
+	margin-left:110px;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:red;
+}
+.buttondis3{
+	margin-top: 20px;
+	margin-left:250px;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:red;
+}
+
+
+
+.purchasedetails
+{
+
+	width: auto;
+	height: auto;
+	margin-top: 30px;
+	margin-left:50px;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+}
+	
+	.namedis1{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:#996600;
+	margin-left:50px;
+}
+.namedis2{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 19px;
+	font-weight:bold;
+	color:red;
+	margin-left:50px;
+}
+.scroll{
+	font-family:"Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 22px;
+	font-weight:bold;
+	color:red;
+	margin-left:50px;
+	margin-top: 150px;
+}
+.cart{
+	margin-left:750px;
+}
+.div1{
+	margin-top:-200px;
+	border:outset;
+	width:200px;
+	height: auto;
+	text-align: center;
+}
+.cart1{
+	margin-left:900px;
+	margin-top: -50px;
+	color:red;
+}
+
+.topdiv{
+	width: 95%;
+	height:100px;
+	/*background-color:#194719;*/
+	background-color:#990033;
+	font-family: "Florence", cursive;
+	font-size: 50px;
+	color:white;
+	border-right: 5px solid red;
+	border-left: 5px solid red;
+
+	
+
+}
+.middlediv{
+	border-right: 5px solid red;
+	border-left: 5px solid red;
+	width: 95%;
+}
+.thirddiv{
+	width: 95%;
+	height:100px;
+	/*background-color:#194719;*/
+	background-color:#990033; 
+	font-family: "Florence",cursive;
+	font-size: 25px;
+	color:white;
+	border-right: 5px solid red;
+	border-left: 5px solid red;
+	
+	
+
+}
+.bodydiv{
+	/*background-color:#305930;*/
+	background-color:white;
+	width: 95%;
+	height:1000px;
+	
+	border-right: 5px solid red;
+	border-left: 5px solid red;
+}
+
+.bodydiv1{
+	background-color:#305930;
+	width: 300px;
+	height:auto;
+	border:outset;
+	
+}
+.details
+{
+
+	width: auto;
+	height: auto;
+	margin-top: 30px;
+	margin-left:50px;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	margin-left: 200px;
+}
+
+.login{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	width: 300px;
+	height: 200px;
+	margin-left:250px;
+	border:groove;
+
+	background-color:white;
+}
+.button{
+	margin-top: 20px;
+}

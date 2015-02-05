@@ -1,0 +1,75 @@
+<div class="col-md-12" ng-controller="UsercheckoutviewCtrl">
+<div class="div">
+	<a href="#/signup">SignUp</a>
+</div>
+<div class="div">
+	<a href="#/login">Login</a>
+</div>
+
+<div class="div">
+	<a href="#/additems">AddItems</a>
+</div>
+<div class="div">
+	<a href="#/viewitems">ViewItems</a>
+</div>
+
+<div ng-repeat="user in user">
+<table align="center" class="details">
+<tr>
+<td>Name</td>
+<td>{{user.name}} </td>
+</tr>
+
+<tr>
+<td>Email</td>
+
+<td>{{user.email}} </td>
+</tr>
+
+
+<tr>
+<td>Phone</td>
+
+<td>{{user.phone}} </td>
+</tr>
+
+
+<tr>
+<td>Address</td>
+
+<td>{{user.address1}} </td>
+</tr>
+<tr>
+<td>Street</td>
+
+<td>{{user.address2}} </td>
+</tr>
+
+<tr>
+<td>City</td>
+
+<td>{{user.city}} </td>
+</tr>
+<tr>
+<td>State</td>
+
+<td>{{user.state}} </td>
+</tr>
+
+
+<tr>
+<td>Pincode</td>
+
+<td>{{user.pincode}} </td>
+</tr>
+<tr>
+<td>Amount to be paid : </td>
+
+<td>{{total}} </td>
+</tr>
+<tr><td>  <input type="button" value="save" ng-click="save()"/>
+</td></tr>
+</table>
+
+</div>
+</div>

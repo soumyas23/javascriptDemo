@@ -1,0 +1,107 @@
+<div class="col-md-12" ng-controller="AdditemsCtrl">
+<div class="topdiv">
+    Pizza World...
+</div>
+<div class="middlediv">
+
+    <img src="header_img.jpg" width="95%" height="300px"/>
+</div>
+<div class="thirddiv">
+    
+    <table>
+    <tr>
+    <td>
+    <ul>
+    <li>
+    
+    <a href="#/adminPage"><span style="color:white">Home</span></a>
+    </li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>
+    
+    <a href="#/additems"><span style="color:red">AddItems</span></a>
+    </li>
+    </ul>
+    </td>
+</tr>
+</table>
+</div>
+<div class="bodydiv">
+<div>
+<form name="form" ng-submit="save(details)">
+<div class="brder">
+
+<div  class="content">
+
+<input type="text" 
+	name="name" 
+	ng-model="details.name" 
+	 placeholder="Name"/>
+     
+</div>
+<div  class="content">
+
+<input type="number" 
+	name="price" 
+	ng-model="details.price" 
+	 placeholder="price"/>
+     
+</div>
+
+<div  class="content">
+
+     <textarea ng-model="details.description" 
+     rows="8" cols="30"
+      placeholder="Description" 
+      name="description"></textarea>
+     
+     
+     </div>
+
+     <div   class="content">
+
+     <input type="radio" 
+     name="type"
+      ng-model="details.type"
+      value="veg" />
+     Veg
+     <input type="radio"
+      name="type" 
+      ng-model="details.type"
+       value="nonveg" />
+     Non Veg
+     
+     </div>
+     <div class="content">
+     <input type="radio"
+      name="category" 
+      ng-model="details.category" 
+      value="personal" />
+     Personal
+     <input type="radio"
+     name="category" 
+     ng-model="details.category" 
+     value="medium" />
+     Medium
+     <input type="radio"
+     name="category" 
+     ng-model="details.category" 
+     value="large" />
+     Large
+     
+     </div>
+     <div class="content">
+     <input type="file"
+     ng-model="details.image"
+     name="image" id="image"/>
+     </div>
+	<div class="content"><input type="submit"  name="submit" value="Add"></div>
+	</div>
+	</form>
+  </div>
+  </div>
+
+</div>

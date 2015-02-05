@@ -1,0 +1,141 @@
+<div class="col-md-12" ng-controller="FormCtrl">
+<form name="form" ng-submit="update(user)" >
+<table align="center">
+<h3 align="center">Billing Form</h3>
+<tr><td><label>Username</label></td>
+     <td><input type="text" 
+       placeholder="Name" 
+       name="name" 
+       ng-model="user.name" 
+       ng-minlength=6 
+       ng-maxlength=20 required =""/></td>
+       <td ng-show="form.$submitted || form.name.$touched"></td>
+<td ng-show="form.name.$error.required === true && form.name.$dirty">Enter username</td>
+<td ng-show="form.name.$error.minlength">Username must have atleast 6 characters</td>
+<td ng-show="form.name.$error.maxlength">Username must be not more than 20 characters</td>
+</tr>
+ <tr><td><label>Password</label></td> 
+       <td><input type="password" 
+       placeholder="Password" 
+       name="password" 
+       ng-model="user.password" 
+       ng-minlength=6 
+       ng-maxlength=20 required /></td>
+ <td ng-show="form.password.$error.required === true && form.password.$dirty">Enter password"></td>
+<td ng-show="form.password.$error.minlength">Password must have atleast 6 characters</td>
+<td ng-show="form.password.$error.maxlength">Password  must be not more than 20 characters</td>      
+
+ </tr>
+<tr><td><label>Age</label></td>
+       <td><input type="number" 
+       placeholder="Age" 
+       name="age" 
+       ng-model="user.age" 
+       min='18'
+       max='100'
+       required /></td>
+</tr>
+
+<div id="sadd">
+<tr><td><label>Shipping Address</label></td></tr>
+<tr><td><label>Address Line1</label></td>
+<td><input type="text" 
+       placeholder="Address Line1" 
+       name="address1" 
+       ng-model="user.address1"
+       required/></td>
+</tr>
+
+<tr><td><label>Address Line2</label></td>
+<td><input type="text" 
+       placeholder="Address Line2" 
+       name="address2" 
+       ng-model="user.address2"
+       required/></td>
+</tr>
+<tr><td><label>City</label></td>
+<td><input type="text" 
+       placeholder="City" 
+       name="city" 
+       ng-model="user.city"
+       required/></td>
+</tr>
+<tr><td><label>State</label></td> 
+<td><input type="text" 
+       placeholder="State" 
+       name="state" 
+       ng-model="user.state"
+       required/></td>
+</tr>
+<tr><td><label>PinCode</label></td>
+<td><input type="number" 
+       placeholder="PinCode" 
+       name="pincode" 
+       ng-model="user.pincode"
+       ng-minlength=6 
+       ng-maxlength=6
+       required/></td>
+ <td ng-show="form.$submitted || form.pincode.$touched"></td>
+<td ng-show="form.pincode.$error.required === true && form.pincode.$dirty">Enter pincode</td>
+<td ng-show="form.pincode.$error.minlength">Pincode must have altleast 6 characters</td>
+<td ng-show="form.pincode.$error.maxlength">Pincode must be not more than characters</td>
+</tr>
+</div>
+
+
+<div id="badd">
+<tr><td><label>Same as above</label></td>
+<td><input type="checkbox" checked="true" ng-model="user.agree" ng-click="checkAddress(user)"></td>
+</tr>
+<tr ng-hide="user.agree"><td><label>Billing address2</label></td></tr>
+<tr ng-hide="user.agree"><td><label>Address Line1</label></td>
+<td><input type="text" 
+       placeholder="Address Line1" 
+       name="baddress1" 
+       ng-model="user.baddress1"
+       required/></td>
+</tr>
+
+<tr ng-hide="user.agree"><td><label>Address Line2</label></td>
+<td><input type="text" 
+       placeholder="Address Line2" 
+       name="baddress2" 
+       ng-model="user.baddress2"
+       required/></td>
+</tr>
+<tr ng-hide="user.agree"><td><label>City</label></td>
+<td><input type="text" 
+       placeholder="City" 
+       name="bcity" 
+       ng-model="user.bcity"
+       required/></td>
+</tr>
+<tr ng-hide="user.agree"><td><label>State</label></td> 
+<td><input type="text" 
+       placeholder="State" 
+       name="bstate" 
+       ng-model="user.bstate"
+       required/></td>
+</tr>
+<tr ng-hide="user.agree"><td><label>PinCode</label></td>
+<td><input type="number" 
+       placeholder="PinCode" 
+       name="bpincode" 
+       ng-model="user.bpincode"
+       ng-minlength=6 
+       ng-maxlength=6
+       required/></td>
+ <td ng-show="form.$submitted || form.pincode1.$touched"></td>
+<td ng-show="form.bpincode.$error.required === true && form.bpincode.$dirty">Enter pincode</td>
+<td ng-show="form.bpincode.$error.minlength">Pincode must have altleast 6 characters</td>
+<td ng-show="form.bpincode.$error.maxlength">Pincode must be not more than characters</td>
+</tr>
+</div>
+
+<tr><td><input type="submit"   value="Save"></td></tr>
+
+   
+ </form>
+
+</div>
+

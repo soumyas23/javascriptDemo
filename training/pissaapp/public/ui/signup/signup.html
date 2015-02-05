@@ -1,0 +1,138 @@
+<div class="col-md-12" ng-controller="SignupCtrl">
+<!-- <div class="heading" > 
+  Pizzzzzzaaaaaaaaaaa  World..
+
+</div>
+<div  class="subHeading">User Details</td></div>
+<div class="signup" align="center"  >
+
+<form name="form" ng-submit="save(user)">
+<div>
+	<div> -->
+   <div class="topdiv">
+    Pizza World...
+</div>
+<div class="middlediv">
+
+    <img src="header_img.jpg" width="95%" height="300px"/>
+</div>
+<div class="thirddiv">
+    
+    <table>
+    <tr>
+    <td>
+    <ul>
+    <li>
+    <a href="#/signup"><span style="color:Red">SignUp</span></a>
+    </li>
+    </ul>
+    </td>
+    
+     
+
+    <td>
+    <ul >
+    <li>
+    <a href="#/login"><span style="color:white">Login</span></a>
+    </li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>
+    <a href="#/viewitems"><span style="color:white">ViewItems</span></a>
+    </li>
+    </ul>
+    </td>
+</tr>
+</table>
+</div>
+<div class="bodydiv">
+<div class="bodydiv1">
+<form name="form">
+<div>
+    <input  type="text"
+     name="name" 
+     ng-model="user.name" 
+     placeholder="name"required=""/>
+    <span ng-show="form.name.$error.required" >Enter name</span>
+
+      
+     </div>
+<div>
+     <input type="email" 
+     name="email" 
+     ng-model="user.email" required="" 
+     placeholder="Email"/>
+     <span ng-show="form.email.$error.required">Enter email
+     </span>
+
+     <span ng-show="form.email.$error.email">Enter valid email
+     </span>
+     </div>
+
+ <div>
+     <input type="password" 
+     name="password"
+      ng-model="user.password" 
+      required="" ng-minlength=6 ng-maxlength=12 placeholder="password"/>
+     <span ng-show="form.password.$error.required" style="color:red">Enter pasword
+     </span>
+     <span ng-show="form.password.$error.minlength" style="color:red">Min length is6
+     </span>
+      <span ng-show="form.password.$error.maxlength" style="color:red">max length is 12
+     </span>
+     </div>
+       <div>
+     <input  type="text"
+     name="address1" 
+     ng-model="user.address1" 
+     placeholder="address" required=""/>
+    <span ng-show="form.address1.$error.required" style="color:red" >Enter address</span>
+
+      
+     </div>
+     <div>
+     <input  type="text"
+     name="address2" 
+     ng-model="user.address2" 
+     placeholder="street" required=""/>
+    <span ng-show="form.address2.$error.required" >Enter street</span>
+
+      
+     </div>
+
+      <div><input  type="text"
+     name="city" 
+     ng-model="user.city" 
+     placeholder="city" required=""/>
+    <span ng-show="form.city.$error.required" >Enter city</span>
+
+      
+     </div>
+     <div><input  type="text"
+     name="state" 
+     ng-model="user.state" 
+     placeholder="state" required=""/>
+    <span ng-show="form.state.$error.required" >Enter state </span>
+
+      
+     </div>
+
+
+      <div>
+     <input type="number" 
+     name="pincode" ng-model="user.pincode"
+      placeholder="pincode"/>
+     
+     </div>
+
+     <div align="center">
+     <input type="submit" ng-click="save(user)">
+     </div>
+
+</form>
+</div>
+</div>
+
+</div>

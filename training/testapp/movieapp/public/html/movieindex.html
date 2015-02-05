@@ -1,0 +1,44 @@
+<html ng-app="movieApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+    <script>
+       var movieApp = angular.module('movieApp', ['ngRoute']);
+
+      movieApp.config(function($routeProvider) {
+        $routeProvider.
+          when('/', {
+            templateUrl: 'movie_list.html',
+            controller: 'movieListCtrl'
+          }).
+          when('/:movieName', {
+            templateUrl: 'movie_details.html',
+            controller: 'movieDetailCtrl'
+          }).
+          otherwise({
+            redirectTo: '/'
+          });
+      });
+
+      movieApp.controller('movieListCtrl', function ($scope, $http){
+        $http.get('../data/movie.json').success(function(data) {
+          $scope.movies = data;
+        });
+      });
+      movieApp.controller('movieDetailCtrl', function ($scope, $routeParams, $http){
+        $scope.name = $routeParams.movieName;
+
+        $http.get('../data/movie.json').success(function(data) {
+          $scope.movie = data.filter(function(entry){
+            return entry.name === $scope.name;
+          })[0];
+        });
+      });
+      </script
+ </head>
+  <body>
+    <div ng-view></div>
+  </body>
+</html>

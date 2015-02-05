@@ -1,0 +1,17 @@
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/style1.css"  />
+</head>
+<body>
+<div  align="center">
+<h2> Choose your movie </h2>
+<ul class="center">
+  <li ng-repeat="movie in movies">
+    <a href="#/{{movie.name}}">{{movie.name}}</a>
+  </li>
+</ul>
+</div>
+
+</body>
+</html>

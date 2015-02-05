@@ -1,0 +1,127 @@
+<div class="col-md-12" ng-controller="AdminpageCtrl">
+<div class="topdiv">
+    Pizza World...
+</div>
+<div class="middlediv">
+
+    <img src="header_img.jpg" width="95%" height="300px"/>
+</div>
+<div class="thirddiv">
+    
+    <table>
+    <tr>
+    <td>
+    <ul>
+    <li>
+    <a href="#/additems"><span style="color:white">AddItems</span></a>
+    </li>
+    </ul>
+    </td> 
+   
+</tr>
+</table>
+</div>
+<div class="bodydiv">
+<div class="table">
+<table border="1" >
+<tr>
+	<th>
+		Name
+
+		</th>
+		<th>
+		Email
+
+		</th>
+
+		<th>
+		City
+
+		</th>
+		<th>
+		State
+
+		</th>
+
+		<th>
+		Pincode
+
+		</th>
+		<th>
+		Click
+
+		</th>
+</tr>
+
+<tr ng-repeat="purchase in purchases" class="imagedis" >
+
+
+<td>
+	{{purchase.user.name}}
+</td>
+
+
+<td>
+	{{purchase.user.email}}
+</td>
+<td>
+	{{purchase.user.city}}
+</td>
+
+<td>
+	{{purchase.user.state}}
+</td>
+<td>
+	{{purchase.user.pincode}}
+</td>
+
+<td>  
+<input  type="button" ng-click="viewPurchase(purchase)" value="ViewDetails"/>
+</td>
+</tr></table>
+<div  ng-show="view">
+<h3 > Pizza Details</h3>
+<div ng-repeat="product in userproducts">
+<table  >
+<tr>
+<td>
+<img src="{{product.image}}">
+
+</td>
+</tr>
+<tr>
+<td>
+
+		Amount :{{product.amount}}
+</td>
+</tr>
+<tr>
+<td>
+
+		Type :{{product.type}}
+</td>
+</tr>
+<tr>
+<td>
+
+		Category :{{product.category}}
+</td>
+</tr>
+<tr>
+<td>
+
+		Quantity :{{product.quantity}}
+</td>
+</tr>
+
+	
+
+
+</table>
+</div>
+
+</div>
+</div>
+
+
+</div>

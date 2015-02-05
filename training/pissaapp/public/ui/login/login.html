@@ -1,0 +1,67 @@
+<div class="col-md-12" ng-controller="LoginCtrl">
+<div class="topdiv">
+    Pizza World...
+</div>
+<div class="middlediv">
+
+    <img src="header_img.jpg" width="95%" height="300px"/>
+</div>
+<div class="thirddiv">
+    
+    <table>
+    <tr>
+    <td>
+    <ul>
+    <li>
+    <a href="#/signup"><span style="color:white">SignUp</span></a>
+    </li>
+    </ul>
+    </td>
+    
+     
+
+    <td>
+    <ul >
+    <li>
+    <a href="#/login"><span style="color:red">Login</span></a>
+    </li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>
+    <a href="#/viewitems"><span style="color:white">ViewItems</span></a>
+    </li>
+    </ul>
+    </td>
+</tr>
+</table>
+</div>
+<div class="bodydiv">
+<div>
+
+<form name="form" ng-submit="verify(loginUser.email,loginUser.pasword)">
+<div class="login">
+<div>
+<input type="email" name="email" ng-model="loginUser.email"required=""/>
+     <span ng-show="form.email.$error.required">Enter email
+     </span>
+
+     <span ng-show="form.email.$error.email">Enter valid email
+     </span>
+</div>
+<div>
+     <input type="password" name="pasword" ng-model="loginUser.pasword"required="" />
+     
+     
+     </div>
+	<div align="center" class="button"><input type="image" src="button.jpg" name="submit" value="Login" width="100px" height="35px"></div>
+	</div>
+
+</form>
+</div>
+</div>
+</div>
+
+
+
