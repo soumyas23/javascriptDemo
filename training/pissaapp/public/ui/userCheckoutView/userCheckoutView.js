@@ -1,6 +1,7 @@
-angular.module('pizzapp').controller('UsercheckoutviewCtrl',function($scope,getuser){
+angular.module('pizzapp').controller('UsercheckoutviewCtrl',function($scope,getuser,$window){
 $scope.cartvalue=getuser.getcartvalue();
 $scope.total=0;
+$scope.username=getuser.getLoginDetails().name;
 $scope.user=getuser.getLoginDetails();
 $scope.order={};
 console.log("viewssss",$scope.user);
@@ -12,7 +13,7 @@ for(var i=0;i<$scope.cartvalue.length;i++)
 			{
 				$scope.cartvalue[j].amount=$scope.total;
 			}
-$scope.save=function(){
+			$scope.save=function(){
 
 
 	
@@ -24,6 +25,7 @@ $scope.save=function(){
 		{
 			$scope.status=status;
 		    console.log($scope.user);
+		     $window.alert("Order saved sucessfull..");
 			
 		});
 };

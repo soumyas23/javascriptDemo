@@ -1,6 +1,6 @@
 angular.module('pizzapp').controller('UsercheckoutCtrl',function($scope,getuser,$location){
 $scope.cart=getuser.getcart();
-
+$scope.username=getuser.getLoginDetails().name;
 $scope.cartvalue=getuser.getcartvalue();
 var total=0;
 console.log("cart",$scope.cart);

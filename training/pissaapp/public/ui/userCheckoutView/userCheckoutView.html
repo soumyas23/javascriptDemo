@@ -1,75 +1,36 @@
 <div class="col-md-12" ng-controller="UsercheckoutviewCtrl">
-<div class="div">
-	<a href="#/signup">SignUp</a>
+<div class="container">
+	<p class="fontHeading">Pizza World...</p>
+	
+	<div class="bs-example">
+	
+	<ul class="nav nav-tabs">
+	 <li><a href="#/viewitems"><span class="glyphicon glyphicon-eye-open"></span> ViewItems</a></li>
+
+    </ul>
+
+
+	</div>
+	</div>
+	<div>
+<label > Welcome {{username}}</label>
 </div>
-<div class="div">
-	<a href="#/login">Login</a>
+<div class="col-md-4 col-md-offset-10">
+<input type="button" name="logout"  value="Logout"  ng-click="logout()"/>
 </div>
+<div class="container">
+<div  class="jumbotron" >
+<p>Name        :{{user.name}}</p>
+<p>Email       :{{user.email}}</p>
+<p>Phone       :{{user.phone}}</p>
+<p>Address     :{{user.address1}}</p>
+<p>Street	   :{{user.address2}}</p>
+<p>City        :{{user.city}}</p>
+<p>State       :{{user.state}}</p>
+<p>Pincode     :{{user.pincode}}</p>
+<p>TotalAmount :{{total}}</p>
+ <input type="button"  class="btn btn-danger" value="save" ng-click="save()"/>
 
-<div class="div">
-	<a href="#/additems">AddItems</a>
 </div>
-<div class="div">
-	<a href="#/viewitems">ViewItems</a>
-</div>
-
-<div ng-repeat="user in user">
-<table align="center" class="details">
-<tr>
-<td>Name</td>
-<td>{{user.name}} </td>
-</tr>
-
-<tr>
-<td>Email</td>
-
-<td>{{user.email}} </td>
-</tr>
-
-
-<tr>
-<td>Phone</td>
-
-<td>{{user.phone}} </td>
-</tr>
-
-
-<tr>
-<td>Address</td>
-
-<td>{{user.address1}} </td>
-</tr>
-<tr>
-<td>Street</td>
-
-<td>{{user.address2}} </td>
-</tr>
-
-<tr>
-<td>City</td>
-
-<td>{{user.city}} </td>
-</tr>
-<tr>
-<td>State</td>
-
-<td>{{user.state}} </td>
-</tr>
-
-
-<tr>
-<td>Pincode</td>
-
-<td>{{user.pincode}} </td>
-</tr>
-<tr>
-<td>Amount to be paid : </td>
-
-<td>{{total}} </td>
-</tr>
-<tr><td>  <input type="button" value="save" ng-click="save()"/>
-</td></tr>
-</table>
-
 </div>
 </div>

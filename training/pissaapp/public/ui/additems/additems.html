@@ -1,40 +1,25 @@
 <div class="col-md-12" ng-controller="AdditemsCtrl">
-<div class="topdiv">
-    Pizza World...
-</div>
-<div class="middlediv">
+<div class="container">
+  <p class="fontHeading">Pizza World...</p>
+  </div>
+  <div class="bs-example">
+  
+  <ul class="nav nav-tabs">
+        <li   ><a href="#/adminPage"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        <li class="active"><a href="#/additems"><span class="glyphicon glyphicon-folder-open"></span>AddItem</a></li>
+        
 
-    <img src="header_img.jpg" width="95%" height="300px"/>
-</div>
-<div class="thirddiv">
-    
-    <table>
-    <tr>
-    <td>
-    <ul>
-    <li>
-    
-    <a href="#/adminPage"><span style="color:white">Home</span></a>
-    </li>
     </ul>
-    </td>
-    <td>
-    <ul>
-    <li>
-    
-    <a href="#/additems"><span style="color:red">AddItems</span></a>
-    </li>
-    </ul>
-    </td>
-</tr>
-</table>
+
+
 </div>
-<div class="bodydiv">
-<div>
+<div class="col-md-4 col-md-offset-4">
+<p class="fontSubHeading">  Add Items</p>
+
+ <div class="jumbotron">
 <form name="form" ng-submit="save(details)">
-<div class="brder">
 
-<div  class="content">
+<div  class="form-group">
 
 <input type="text" 
 	name="name" 
@@ -42,7 +27,7 @@
 	 placeholder="Name"/>
      
 </div>
-<div  class="content">
+<div  class="form-group">
 
 <input type="number" 
 	name="price" 
@@ -51,7 +36,7 @@
      
 </div>
 
-<div  class="content">
+<div  class="form-group">
 
      <textarea ng-model="details.description" 
      rows="8" cols="30"
@@ -61,7 +46,7 @@
      
      </div>
 
-     <div   class="content">
+     <div  class="form-group">
 
      <input type="radio" 
      name="type"
@@ -75,7 +60,7 @@
      Non Veg
      
      </div>
-     <div class="content">
+     <div class="form-group">
      <input type="radio"
       name="category" 
       ng-model="details.category" 
@@ -93,13 +78,13 @@
      Large
      
      </div>
-     <div class="content">
+     <div class="form-group">
      <input type="file"
      ng-model="details.image"
      name="image" id="image"/>
      </div>
-	<div class="content"><input type="submit"  name="submit" value="Add"></div>
-	</div>
+	<div class="button"><input type="submit" class="btn btn-primary btn-xs"   name="submit" value="Add"></div>
+
 	</form>
   </div>
   </div>

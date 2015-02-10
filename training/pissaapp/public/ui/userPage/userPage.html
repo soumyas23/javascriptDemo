@@ -1,15 +1,32 @@
 <div class="col-md-12" ng-controller="UserpageCtrl">
 
-<div class="heading">
-  Pizzzzzzaaaaaaaaaaa  World..
+<div class="container">
+	<p class="fontHeading">Pizza World...</p>
+	</div>
+	<div class="bs-example">
+	
+	<ul class="nav nav-tabs">
+        <li  class="active"><a href="#/userPage"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        <li><a href="#/viewitems"><span class="glyphicon glyphicon-folder-open"></span>ViewItem</a></li>
+        
+
+    </ul>
+
 
 </div>
-<div class="cart">
+<div>
+<label > Welcome {{username}}</label>
+</div>
+<div class="col-md-4 col-md-offset-10">
+<input type="button" name="logout"  value="Logout"  ng-click="logout()"/>
+</div>
+<div class="col-md-4 col-md-offset-10">
 	<input type="image" src="3.jpg" ng-model="cartimage" ng-click="getcart()"
-		width="200px" height="200"/>
+		width="120px" height="100px"/>
+		<span class="redColor"><label ng-show="cartvalue">[{{cartvalue}}]</label>
 
 </div>
-<div class="cart1">
-<label ng-show="cartvalue">[{{cartvalue}}]</label>
-</div
+
+
+
 </div>

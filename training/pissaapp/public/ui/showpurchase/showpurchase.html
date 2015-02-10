@@ -1,28 +1,19 @@
 <div class="col-md-12" ng-controller="ShowpurchaseCtrl">
 
-<div class="heading" > 
-  Pizzzzzzaaaaaaaaaaa  World..
+<div class="container">
+    <p class="fontHeading">Pizza World...</p>
+    
+    <div class="bs-example">
+    <ul class="nav nav-tabs">
+     <li ><a href="#/home"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+    
+     <li><a href="#/viewitems"><span class="glyphicon glyphicon-eye-open"></span> ViewItems</a></li>
 
-</div>
+    </ul>
 
 
-
-<div class="div">
-	<a href="#/signup">SignUp</a>
-</div>
-<div class="div">
-	<a href="#/login">Login</a>
-</div>
-
-<div class="div">
-	<a href="#/additems">AddItems</a>
-</div>
-<div class="div">
-	<a href="#/viewitems">ViewItems</a>
-</div>
-<div  class="subHeading"> Purchase Details</div>
-
-<div  class="imagedis" >
+    </div>
+<div  class="jumbotron" >
 
 	<img src="{{purchase.image}}">
   <div class="namedis">
@@ -40,7 +31,7 @@
 	<div class="namedis">
 		Category: {{purchase.category}}
 	</div>
-</div>
+
 <div  class="subHeading"> Shipping Details</div>
 
 
@@ -78,6 +69,7 @@
 	</div>
 	<div class="namedis2">
 		<label ng-show="purchase.quantity">Total Amount:{{purchase.quantity*purchase.price}} </label></div>
+		</div>
 	<div class="namedis1">
 	<input type="button"  name="order" value="Place Order" ng-click="display()" />
 	</div>

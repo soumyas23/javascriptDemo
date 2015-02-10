@@ -1,29 +1,19 @@
 <div class="col-md-12" ng-controller="CartdetailsCtrl">
-<div class="topdiv">
-	Pizza World...
-</div>
-<div class="middlediv">
+<div class="col-md-12" ng-controller="ViewitemsCtrl">
+<div class="container">
+	<p class="fontHeading">Pizza World...</p>
+	</div>
+	<div class="bs-example">
+	
+	<ul class="nav nav-tabs">
+	 <li><a href="#/viewitems"><span class="glyphicon glyphicon-eye-open"></span> ViewItems</a></li>
 
-	<img src="header_img.jpg" width="95%" height="300px"/>
-</div>
-<div class="thirddiv">
-	
-	<table>
-	<tr>
-	<td>
-	<ul>
-	<li>
-	<a href="#/viewItems"><span style="color:white">ViewItems</span></a>
-	</li>
-	</ul>
-	</td>
-	
+    </ul>
 
-	
-</tr>
-</table>
+
+	</div>
 </div>
-<div class="bodydiv">
+<div class="jumbotron">
 
 <div ng-repeat="pissa in cartvalue" class="imagedis" >
 
@@ -52,9 +42,9 @@
 </div>
 
 
-<div class="buttondis3">
+<div >
 	<input type="button"
-	 id="order" name="order"
+	 id="order" name="order" class="btn btn-danger"
 	  value="Checkout" ng-click="order()"/>
 </div>
 </div>

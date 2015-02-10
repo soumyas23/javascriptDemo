@@ -149,6 +149,9 @@ angular.module('pizzapp').factory('getuser',function($http) {
              console.log("inside service",getuser.userLogin);
 
           },
+          setLogout:function(){
+              getuser.logStatus=0;
+          },
 
           getLoginDetails:function(){
              return getuser.userLogin;
